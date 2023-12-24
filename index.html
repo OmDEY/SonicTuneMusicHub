@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlElement">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONICTUNE.HUB</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body style="background-color: rgb(17, 17, 67)">
+  <nav id="navigationBar">
+     <div class="hamburger-icon" id="hamburger-menu" <!--onclick="sideDisplay()-->">
+      <i class="bi bi-list"></i>
+    </div>
+    <div class="logo">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_4qzNc_PdBCKNY6r9TXkPDzbI57vqHGtgqB-iiIoeSFonhLKWTrr7-vGHaUd5_Y9l8rI&usqp=CAU">
+    </div>
+    <div class="heading">
+      <h3>SONICTUNE</h3>
+    </div>
+    <div class="nav-items">
+      <button>HOME 
+      <button>MY PLAYLIST 
+      <button>FAVOURITES 
+      <button>LANGUAGE 
+      <button>SONGS 
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search 
+    </form>
+  </nav>
+  <div class="sideMenu active" id="sideMenu">
+    <div class="logInSignIn">
+      <i class="bi bi-person"></i>
+      <span>Log In/Sign Up</span>
+    </div>
+    <div class="sideMenuItems">
+      <ul>
+        <li>Home</li>                   
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="soundBar" id="soundBar">
+    <div class="seek">
+      <audio src="Ed Sheeran - Shape Of You (Lyrics).mp3" id="song"></audio>
+      <input type="range" value="0"id="music-progress-bar">
+    </div>
+    <div class="music-details">
+      <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71i8a-PnChL._AC_UF1000,1000_QL80_.jpg" alt="" height="40px" width="40px">
+      <span id="Music-name">Music 1</span>
+      <i id="Favourite" class="bi bi-heart" onclick="Fav()"></i>
+      <i class="bi bi-download"></i>
+    </div>
+    <div class="music-player">
+      <button><i class="bi bi-repeat"></i></button> 
+      <button><i class="bi bi-skip-backward-fill"></i></button>
+      <button><i id="ctrlIcon" class="bi bi-play-circle-fill" onclick="playPause()"></i></button>
+      <!-- <i class="bi bi-pause-circle-fill"></i> -->
+      <button><i class="bi bi-skip-forward-fill"></i></button>
+      <button><i class="bi bi-shuffle"></i></button>
+    </div>
+    <div class="volumeController">
+      <i class="bi bi-chevron-up"></i>
+    </div>
+  </div>
+
+
+  <script src="sonic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
